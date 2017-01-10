@@ -1,0 +1,15 @@
+.some-class {
+    margin-left: 200px;
+    margin-top: 50px;
+    color: yellow;
+}
+
+#some-id {
+    margin-left: 100px;
+}
+
+.my-panel {
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 400px;
+}
