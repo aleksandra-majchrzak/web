@@ -31,7 +31,7 @@ public class MainServlet extends HttpServlet {
             writer.println("</head>");
             writer.println("<body>");
             writer.println("Jakis tekst");
-            writer.println("<a href=\" /second.jsp\" >second</a>");
+            writer.println("<a href=\" /second\" >second</a>");
             writer.println("</body>");
             writer.println("</html>");
             writer.flush();
