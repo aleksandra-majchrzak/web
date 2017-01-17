@@ -3,12 +3,21 @@
  */
 public class User {
 
+    private int id;
     private String name;
     private String surname;
 
     public User(String name, String surname) {
+        this(0, name, surname);
+    }
+
+    public User(int id, String name, String surname) {
         this.name = name;
         this.surname = surname;
+    }
+
+    public int getId() {
+        return this.id;
     }
 
     public String getName() {
