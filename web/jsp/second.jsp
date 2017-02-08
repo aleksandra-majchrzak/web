@@ -22,6 +22,12 @@
 <h1 class="some-class">SecondServlet</h1>
 <h3 id="some-id"> to jest strona z second servlet</h3>
 
+<c:choose>
+    <c:when test="@{error}!= null">
+        <div
+    </c:when>
+</c:choose>
+
 <form role="form" action="/second" method="post" class="second-div">
     <div class="form-group">
         <div class="input-group">

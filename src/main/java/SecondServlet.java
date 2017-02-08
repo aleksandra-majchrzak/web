@@ -1,3 +1,5 @@
+import hibernate.UsersEntity;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -58,8 +60,11 @@ public class SecondServlet extends HttpServlet {
         users.add(new User("Jan3", "Kowalski3"));
         users.add(new User("Jan4", "Kowalski4"));*/
 
-        UserDAO userDAO = new UserDAO();
-        List<User> users = userDAO.getAllUsers();
+        /*UserDAO userDAO = new UserDAO();
+        List<User> users = userDAO.getAllUsers();*/
+
+        UserHDAO userDAO = new UserHDAO();
+        List<UsersEntity> users = userDAO.getAllUsersJPA();
 
         System.out.println(users.size());
 

@@ -6,10 +6,12 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="web2" />
+          <element id="jpa-descriptors" facet="web2/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="mysql-connector-java-5.1.35-bin" />
+          <element id="library" level="project" name="Hibernate 5.2.3-5.2.3" />
         </element>
       </element>
     </root>
