@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 /**
  * Created by Mohru on 10.01.2017.
  */
-@WebServlet(name = "MainServlet")
+@WebServlet(name = "MainServlet", urlPatterns = {"/main"})
 public class MainServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

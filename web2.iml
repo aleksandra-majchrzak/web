@@ -9,6 +9,7 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web/jsp" relative="/" />
           <root url="file://$MODULE_DIR$/web/css" relative="/web2/css" />
+          <root url="file://$MODULE_DIR$/web/images" relative="/web2/images" />
         </webroots>
         <sourceRoots>
           <root url="file://$MODULE_DIR$/src/main/java" />

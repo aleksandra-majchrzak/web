@@ -7,7 +7,7 @@ import java.io.IOException;
 /**
  * Created by Mohru on 31.01.2017.
  */
-@WebFilter(filterName = "UserFilter")
+@WebFilter(filterName = "UserFilter", urlPatterns = {"/filtered", "/filtered.jsp"})
 public class UserFilter implements Filter {
 
     FilterConfig config;

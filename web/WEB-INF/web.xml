@@ -5,7 +5,7 @@
          version="3.1">
 
 
-    <servlet>
+    <!--<servlet>
         <servlet-name>MainServlet</servlet-name>
         <servlet-class>MainServlet</servlet-class>
     </servlet>
@@ -54,7 +54,7 @@
         <filter-name>UserFilter</filter-name>
         <url-pattern>/filtered</url-pattern>
         <url-pattern>/filtered.jsp</url-pattern>
-    </filter-mapping>
+    </filter-mapping>-->
 
     <error-page>
         <error-code>404</error-code>

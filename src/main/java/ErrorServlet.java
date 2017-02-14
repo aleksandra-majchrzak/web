@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * Created by Mohru on 31.01.2017.
  */
-@WebServlet(name = "ErrorServlet")
+@WebServlet(name = "ErrorServlet", urlPatterns = {"/error"})
 public class ErrorServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

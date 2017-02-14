@@ -12,5 +12,20 @@
 </head>
 <body>
 <h1>This is filtered jsp</h1>
+
+<%
+    Cookie[] cookies = request.getCookies();
+    String userName = "";
+
+    for (Cookie cookie : cookies) {
+        if (cookie.getName().equals("userName"))
+            userName = cookie.getValue();
+    }
+%>
+
+<div>
+    <p><%= userName %>
+    </p>
+</div>
 </body>
 </html>

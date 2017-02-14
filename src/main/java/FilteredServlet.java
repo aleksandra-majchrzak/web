@@ -8,7 +8,7 @@ import java.io.IOException;
 /**
  * Created by Mohru on 31.01.2017.
  */
-@WebServlet(name = "FilteredServlet")
+@WebServlet(name = "FilteredServlet", urlPatterns = {"/filtered"})
 public class FilteredServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 

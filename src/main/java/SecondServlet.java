@@ -2,6 +2,7 @@ import hibernate.UsersEntity;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,7 +12,7 @@ import java.util.List;
 /**
  * Created by Mohru on 10.01.2017.
  */
-@WebServlet(name = "SecondServlet")
+@WebServlet(name = "SecondServlet", urlPatterns = {"/second"})
 public class SecondServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -32,6 +33,12 @@ public class SecondServlet extends HttpServlet {
 
             request.getSession().setAttribute("loggedUserSession", user);
             getServletContext().setAttribute("loggedUserApplication", user);
+
+            Cookie userName = new Cookie("userName", name);
+            Cookie userSurname = new Cookie("userSurname", surname);
+
+            response.addCookie(userName);
+            response.addCookie(userSurname);
 
             //doGet(request, response);
 
